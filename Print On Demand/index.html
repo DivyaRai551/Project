@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print On Demand</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">PrintCraft</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Design. Print. Deliver.</h2>
+        <p>Create custom prints on t-shirts, mugs, posters, and more!</p>
+        <a href="#shop" class="btn">Start Designing</a>
+      </div>
+    </section>
+
+    <section class="products" id="shop">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="assets/tSirt.jpg" alt="T-Shirt" />
+            <h3>Custom T-Shirt</h3>
+            <p>Starting at ₹499</p>
+            <button onclick="addToCart('Custom T-Shirt')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/mug.jpg" alt="Mug" />
+            <h3>Custom Mug</h3>
+            <p>Starting at ₹299</p>
+            <button onclick="addToCart('Custom Mug')">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="assets/Poster.jpg" alt="Poster" />
+            <h3>Custom Poster</h3>
+            <p>Starting at ₹199</p>
+            <button onclick="addToCart('Custom Poster')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <div class="container">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 PrintCraft. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
